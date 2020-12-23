@@ -1,0 +1,232 @@
+*{
+  font-family: Roboto, sans-serif;
+  margin:0px;
+  padding: 0px;
+}
+html{
+  background-image: url("https://i.pinimg.com/originals/b5/13/6d/b5136d8c0a8ef4218bc0246056841588.jpg");
+  background-attachment: scroll;
+}
+
+.telo{
+
+}
+
+.kategorie{
+  height: 93vh;
+  padding-top: 7vh;
+  overflow: hidden;
+}
+.licha{
+  background: white;
+}
+.suda{
+  background: rgba(31, 25, 24, 1);
+}
+
+#ingredience ul{
+  margin-top: 10vh;
+}
+#ingredience li{
+  margin-top: 3vh;
+}
+#pomucky ul{
+  margin-top: 8vh;
+}
+#pomucky li{
+  margin-top: 3vh;
+}
+#recept{
+  height: 279vh;
+}
+#info{
+}
+
+h2{
+  text-align: center;
+  font-size: 10em;
+  font-weight: 400;
+
+  cursor: default;
+}
+.licha h2{
+  color: rgb(31, 25, 24);
+}
+.suda h2{
+  color: white;
+}
+
+h3{
+  text-align: block;
+  margin-left: 20vw;
+
+  font-size: 4em;
+  font-weight: 100;
+}
+.licha h3{
+  color: rgba(31, 25, 24, 0.8);
+}
+.suda h3{
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.hlava{
+  background-color: #bfbab4;
+  height: 93vh;
+  cursor: default;
+  overflow: hidden;
+}
+.hlava img{
+  display: inherit !important;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: blur(5px);
+  transform: scaleX(-1);
+  transform: scale(-1.1,1.1);
+}
+
+.nadpis{
+  position: absolute;
+  width: 100%;
+  top: 48%;
+  left: 30%;
+  transform: translate(-32%, -50%);
+}
+h1{
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0px 0px 10px rgba(50, 50, 50, 0.3);
+
+  font-size:10em;
+  text-align: right;
+  font-weight: 700;
+  letter-spacing: -3px;
+}
+
+.navbar{
+  position: sticky;
+  top: 0;
+  user-select: none;
+}
+.navbar ul{
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(10px);
+  height: 7vh;
+}
+.navbar li{
+  position: relative
+  flex: 1;
+  list-style-type: none;
+  padding-top: 1vh;
+}
+.navbar li a{
+  display: block;
+
+  color: #f5f5f7;
+  font-size: 4vh;
+  font-weight: 100;
+
+  text-align: center;
+  text-decoration: none;
+}
+li a:hover{
+  text-shadow: 0px 0px 2px white;
+}
+li a:active{
+  text-shadow: 0px 0px 5px white;
+}
+
+#krok1, #krok3{
+  background: ;
+}
+.kroky img{
+  float: left;
+
+  width: 16cm;
+  height: 12cm;
+}
+
+.kroky span{
+  display: block;
+  text-align: left;
+  font-size:4em;
+  font-weight: 100;
+  color: white;
+  overflow: hidden;
+  padding-left: 2vw;
+  padding-top: 0%;
+}
+
+.kroky p{
+  display: none;
+}
+.kroky div{
+  width: 50vw;
+  width: 50vw;
+
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 5vh;
+  overflow: hidden;
+  background: rgb(31, 25, 24);
+  transition: 0.5s;
+  border-radius: 7px
+}
+.kroky div:hover{
+  width: 90vw;
+  background: rgb(51, 45, 44);
+}
+
+@media only screen and (max-aspect-ratio: 5/6){
+  .kategorie{
+    height: 50vh;
+    padding-top: 0vh;
+  }
+  #ingredience ul{
+    margin-top: 5vh;
+  }
+  #pomucky ul{
+    margin-top: 3vh;
+  }
+  #recept{
+    height: 200vh;
+  }
+
+  .navbar{
+    position:fixed;
+    width: 100%;
+    top:93vh;
+  }
+  .navbar ul{
+    justify-content: space-between;
+  }
+  .navbar li a{
+    padding-top: 1vw;
+    font-size: 5vw;
+  }
+
+  .nadpis{
+    width: 100%;
+    left: 0px;
+    transform: translate(0vh, -40vh);
+  }
+  h1{
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    font-size: 28vw;
+  }
+
+  h2{
+    text-align: left;
+    font-size: 15vw;
+  }
+
+  h3{
+    margin-left: 0px;
+    font-size: 8vw;
+    font-weight: 300;
+  }
+}
